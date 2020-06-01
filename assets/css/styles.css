@@ -80,7 +80,9 @@ footer a {
 }
 
 section {
-  padding: 60px
+
+  /* padding: 60px; */
+  padding: 0;
 }
 
 
