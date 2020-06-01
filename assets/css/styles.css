@@ -1,36 +1,74 @@
 
   /* remove default browser stylings */
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
+  background-color: transparent;
 }
 
 
 body {
   
-  color: #39a6b2;
+  color: teal;
   font-family: Helvetica, Arial, sans-serif;
-  background-color: #39a6b2;
+  background-color: white;
+  height: 1237;
+  width: 77;
+  
+  
+  /*              /*  uncomment to check padding */
+  
+  
+  
+  
+  
+  
+  
   
 }
 
 header {
-  padding: 20px 35px;
-  background-color: #39a6b2;
+  
+  
+ padding-right: px;
+ padding-bottom: 0px;
+ padding-top: px;
+     /*uncomment me to check padding */
+  margin: 30px 30px;
+  background-color: white
+  
+  
+  
+  
 }
 
 header h1 {
+  
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
   margin: 0;
   
+
+
+  
+  
+  display: inline;
+  
+  /* v check
+ 
+  /* float: right; */
+ 
+
+
+
+
+
 }
 
 
-header nav {
-  float: right;
-}
+
+
 
 
 /* 
@@ -40,15 +78,45 @@ putting in separate css style group -->
 
 */
 
-header nav ul li {
-  display: inline;
-}
-header nav ul li a {
-  
-  margin: 0 30px;
-  font-weight: initial;
-  font-size: 22px
 
+
+/* caution of heirarchy here!!!! */
+
+
+
+
+header nav ul {
+  
+  
+  font-weight: initial;
+}
+
+header nav ul li {
+  
+    display: inline;
+  }
+  
+
+
+
+header nav  li  {
+  
+  
+ 
+  padding: 3px;
+  padding-top: 3px;
+ 
+  /*the dot color*/
+  color: teal;
+  font-weight: initial;
+  position: right;
+  
+  
+
+  
+  float: right;
+ 
+  font-size: 21.36px
   
   
 
@@ -58,28 +126,62 @@ a:link {
   color: green;
   background-color: transparent;
   text-decoration: none;
+
 }
 
 a:visited {
   color: #fce138;
   background-color: transparent;
   text-decoration: none;
+  
 }
 
 a:hover {
-  color: blue;
-  background-color: transparent;
+  color: magenta;
+  
+  
+  /*background-color: red;    /*uncomment to check margins */
   text-decoration: none;
 }
 
 a:active {
   color: yellow;
-  background-color: transparent;
+  background-color: teal;
   text-decoration: underline;
+
 }
 
 
-  /* from buddy with love yellow */
-  footer h2 {
-    color:  #fce138;;
+  /* from made with love Run Buddy teal */
+  footer h1 {
+    color:  teal;
+    padding: 0;
+
+    
+    
+    
+    background-color: white;
+    
+    
+    
+    /* padding: 30px;
+    /*uncomment this message and save to check padding. */
+        
+
+
+    
+    
+  font-weight: initial;
+  font-size: 22px
+  }
+
+  
+
+  
+
+  html {
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
