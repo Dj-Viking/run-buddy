@@ -28,12 +28,10 @@ header h1 {
 }
 
 header nav ul li a {
-  display: inline;
+  
   margin: 0 30px;
-  font-weight: lighter;
-  font-size: 22px;
-  color: #fce138;
-
+  font-weight: initial;
+  font-size: 22px
 
 }
 
