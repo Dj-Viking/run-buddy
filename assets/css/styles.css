@@ -16,15 +16,7 @@ body {
   width: 77;
   
   
-  /*              /*  uncomment to check padding */
-  
-  
-  
-  
-  
-  
-  
-  
+  /*              /*  uncomment to check something */
 }
 
 header {
@@ -36,10 +28,6 @@ header {
      /*uncomment me to check padding */
   margin: 30px 30px;
   background-color: white
-  
-  
-  
-  
 }
 
 header h1 {
@@ -48,22 +36,9 @@ header h1 {
   font-size: 36px;
   color: #fce138;
   margin: 0;
-  
-
-
-  
-  
   display: inline;
-  
-  /* v check
- 
+   /* v check
   /* float: right; */
- 
-
-
-
-
-
 }
 
 
@@ -91,7 +66,7 @@ header nav ul {
   font-weight: initial;
 }
 
-header nav ul li {
+header nav ul li  {
   
     display: inline;
   }
@@ -109,7 +84,7 @@ header nav  li  {
   /*the dot color*/
   color: teal;
   font-weight: initial;
-  position: right;
+ 
   
   
 
