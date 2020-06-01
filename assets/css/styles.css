@@ -1,154 +1,88 @@
-
-  /* remove default browser stylings */
+/*Sets browser default margin and padding to 0*/
 * {
-  margin: 0px;
+  margin: 0;
   padding: 0;
-  background-color: transparent;
+  box-sizing: border-box;
 }
 
-
+/* apply styles to body */
 body {
-  
-  color: teal;
-  font-family: Helvetica, Arial, sans-serif;
-  background-color: white;
-  height: 1237;
-  width: 77;
-  
-  
-  /*              /*  uncomment to check something */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #39a6b2
 }
 
+/* apply styles to <header> */
 header {
-  
-  
- padding-right: px;
- padding-bottom: 0px;
- padding-top: px;
-     /*uncomment me to check padding */
-  margin: 30px 30px;
-  background-color: white
+  padding: 20px 35px;
+  background-color: #39a6b2;
 }
 
+/*applying inline elements to h1 header*/
 header h1 {
-  
+  margin: 0;
+  display: inline;
+}
+
+/*applying <header> <h1> <a>*/
+header h1 a{
   font-weight: bold;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
-  display: inline;
-   /* v check
-  /* float: right; */
-}
-
-
-
-
-
-
-/* 
-
-
-putting in separate css style group -->
-
-*/
-
-
-
-/* caution of heirarchy here!!!! */
-
-
-
-
-header nav ul {
-  
-  
-  font-weight: initial;
-}
-
-header nav ul li  {
-  
-    display: inline;
-  }
-  
-
-
-
-header nav  li  {
-  
-  
- 
-  padding: 3px;
-  padding-top: 3px;
- 
-  /*the dot color*/
-  color: teal;
-  font-weight: initial;
- 
-  
-  
-
-  
-  float: right;
- 
-  font-size: 21.36px
-  
-  
-
-}
-
-a:link {
-  color: green;
-  background-color: transparent;
   text-decoration: none;
-
 }
 
-a:visited {
+/*removes underline and color of link*/
+header a{
+  text-decoration: none;
   color: #fce138;
-  background-color: transparent;
-  text-decoration: none;
-  
 }
 
-a:hover {
-  color: magenta;
-  
-  
-  /*background-color: red;    /*uncomment to check margins */
-  text-decoration: none;
+/*moves nav bar inline to header*/
+header nav {
+  float: right;
+  margin: 7px 0;
 }
 
-a:active {
-  color: yellow;
-  background-color: teal;
-  text-decoration: underline;
-
+/*makes all listed items in unordered list inline with eachother*/
+header nav ul li {
+  display: inline;
 }
 
+/*Gives properties to a elements*/
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
 
-  /* from made with love Run Buddy teal */
-  footer h1 {
-    color:  teal;
-    padding: 0;
+/*styling to footer*/
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
 
-    
-    
-    
-    background-color: white;
-    
-    
-    
-    /* padding: 30px;
-    /*uncomment this message and save to check padding. */
-        
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
 
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
 
-    
-    
-  font-weight: initial;
-  font-size: 22px
-  }
+footer a {
+  color: #024e76
+}
+
+section {
+  padding: 60px
+}
+
 
   
 
@@ -159,4 +93,5 @@ a:active {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
   }
