@@ -80,6 +80,9 @@ footer a {
   color: #024e76
 }
 /* footer style end */
+section {
+  padding: 60px;
+}
 
 /* hero style start */
 .hero {
@@ -88,7 +91,10 @@ footer a {
   background-image: url("/images/hero-bg.jpg");
   height: 600px;
   background-size: cover;
-  background-position: center
+  background-position: center;
+  /* The bounds of THIS parent element are restricting the child elements relative to THIS parents own boundaries
+      PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */
+  position: relative;
 }
 
 
@@ -104,6 +110,14 @@ footer a {
   border-width: 3px;
   border-color: #024e76;
   border: solid 3px #024e76;
+  
+  /* position this class element form within the bounds of its parent tag */
+  position: absolute;
+  /* any additional padding relating to the bounds of the parent tag */ 
+  bottom: 120px;
+  right: 140px;
+  
+  
 }
 
 
@@ -114,9 +128,13 @@ footer a {
 
   
 
+  /* extra padding for the entire page
+  when I was looking at examples I thought the white space was supposed to be there so I added it with this styling
+  in retrospect I think it was an illusion given by the picture examples
   html {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
   }
+*/
