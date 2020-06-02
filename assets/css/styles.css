@@ -90,7 +90,7 @@ section {
 .hero {
 
   padding: 60px;
-  /*background-image: url("/assets/images/hero-bg.jpg");*/
+  background-image: url('/assets/images/hero-bg.jpg');
   height: 600px;
   background-size: cover;
   background-position: center;
@@ -98,6 +98,8 @@ section {
       PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */
   position: relative;
 }
+
+
 
 /* creating a new div class here for everything contained inside the "hero-form" */
 
