@@ -91,8 +91,10 @@ section {
 
   padding: 60px;
   /* for some reason this CSS property doesn't work when I deploy it to github pages
+  
   it will only work if I link the image inside the HTML file and I dont know why..
-  /* background-image: url('/assets/images/hero-bg.jpg'); */ 
+  /* type ../ to indicate that I have to jump up one directory of where THIS styles.css file is located and then enter into /images directory */
+  background-image: url('../images/hero-bg.jpg'); 
   height: 600px;
   background-size: cover; 
   background-position: center;
