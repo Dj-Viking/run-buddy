@@ -90,9 +90,11 @@ section {
 .hero {
 
   padding: 60px;
-  /* background-image: url('/assets/images/hero-bg.jpg'); */
+  /* for some reason this CSS property doesn't work when I deploy it to github pages
+  it will only work if I link the image inside the HTML file and I dont know why..
+  /* background-image: url('/assets/images/hero-bg.jpg'); */ 
   height: 600px;
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
   /* The bounds of THIS parent element are restricting the child elements relative to THIS parents own boundaries
       PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */

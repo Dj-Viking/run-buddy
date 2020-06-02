@@ -40,8 +40,8 @@
         
     <!-- hero/jumbotron section -->
 
-                            <!-- using this to check something style="background-image: url('assets/images/hero-bg.jpg');" -->
-    <section style="background-image: url('assets/images/hero-bg.jpg');"class="hero">
+    <!-- using this to check something style="background-image: url('assets/images/hero-bg.jpg');" background-size="cover"; background-position="center"; -->
+    <section style="background-image: url('assets/images/hero-bg.jpg');" class="hero">
         
         <div class="hero-form">
             <h3>
@@ -58,18 +58,18 @@
                 <!-- Form item email -->
                 
                 <label class="form-label" for="email">Enter email address:</label>
-                <input class="form-input" type="text" placeholder="Email Address" name="email" id="email"/>
+                <input class="form-input" type="text" placeholder="Your Email" name="email" id="email"/>
                 <!-- Form item telephonenumber -->
                 
                 <label class="form-label" for="telephonenumber">Enter a telephone number:</label>
-                <input class="form-input" type="text" placeholder="Telephone Number" name="telephonenumber" id="telephonenumber"/>
+                <input class="form-input" type="text" placeholder="Your Number" name="telephonenumber" id="telephonenumber"/>
                 
                 <p>
                     Have you worked out with a trainer before?
                     <!-- New paragraph nested inside the form checkbox trainer yes or no -->
-                    <input type="checkbox" name="trainer-confirm" id="trainer-yes" value="Yes"/>
+                    <input type="radio" name="trainer-confirm" id="trainer-yes" value="Yes"/>
                     <label for="trainer-yes">Yes</label>
-                    <input type="checkbox" name="trainer-confirm" id="trainer-no" value="No"/>
+                    <input type="radio" name="trainer-confirm" id="trainer-no" value="No"/>
                     <label for="trainer-no">No</label>
                 </p>
                 <p>
