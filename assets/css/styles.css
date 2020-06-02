@@ -55,6 +55,7 @@ header nav ul li a {
   font-size: 22px;
 }
 
+
 /*styling to footer*/
 footer {
   background: #fce138;
@@ -78,12 +79,35 @@ footer div {
 footer a {
   color: #024e76
 }
+/* footer style end */
 
-section {
+/* hero style start */
+.hero {
 
-  /* padding: 60px; */
-  padding: 0;
+  padding: 60px;
+  background-image: url("/images/hero-bg.jpg");
+  height: 600px;
+  background-size: cover;
+  background-position: center
 }
+
+
+
+/* creating a new div class here for everything contained inside the "hero-form" */
+
+.hero-form {
+  background-color: #fce138;
+  padding: 20px;
+  width: 500px;
+  color: #024e76;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #024e76;
+  border: solid 3px #024e76;
+}
+
+
+/* hero style end */
 
 
   
