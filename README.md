@@ -3,4 +3,4 @@
 
 https://dj-viking.github.io/run-buddy/
 
-### ® Run Buddy Inc.
+### ® Run Buddy Inc...
