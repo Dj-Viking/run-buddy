@@ -14,3 +14,4 @@ https://dj-viking.github.io/run-buddy/
 ## Contribution
 Made with ❤️ by Anders Ackerman
 
+Run Buddy Inc.
