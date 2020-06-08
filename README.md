@@ -1,6 +1,16 @@
+# Run Buddy, Inc
 
-# Deployment link
+## Purpose
+A website that offers fitness training services. 
 
-https://dj-viking.github.io/run-buddy/
+## Built With
+* HTML
+* CSS
 
-### ® Run Buddy Inc.
+## Website
+https://lernantino.github.io/run-buddy/
+
+## Contribution
+Made with ❤️ by [your name]
+
+### ©️2019 Run Buddy, Inc 
