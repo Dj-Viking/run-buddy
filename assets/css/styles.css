@@ -59,52 +59,54 @@ header nav ul li a {
 }
 
 
-/*styling to footer*/
-footer {
-  background: #fce138;
-  width: 100%;
-  padding: 40px 35px;
-}
-
-footer h2 {
-  display: inline;
-  color: #024e76;
-  font-size: 30px;
-  margin: 0;
-}
-
-footer div {
-  float: right;
-  line-height: 1.5;
-  text-align: right;
-}
-
-footer a {
-  color: #024e76
-}
-/* footer style end */
-section {
-  padding: 60px;
-}
 
 /***********************/
 
 /* hero style start */
 
-.hero {
+section {
+  padding: 60px;
+  
+}
 
+
+
+
+
+.hero {
+  
   padding: 60px;
   /* for some reason this CSS property doesn't work when I deploy it to github pages
   
   it will only work if I link the image inside the HTML file and I dont know why..
   /* type ../ to indicate that I have to jump up one directory of where THIS styles.css file is located and then enter into /images directory */
-  background-image: url('../images/hero-bg.jpg'); 
+  background-image: url('../images/flipped-hero-image.jpg'); 
   height: 600px;
   background-size: cover; 
   background-position: center;
   /* The bounds of THIS parent element are restricting the child elements relative to THIS parents own boundaries
-      PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */
+  PLEASE REMEMBER! position: static will allow the child element to go OUTSIDE the parents bounds! */
   position: relative;
+}
+
+.start-building-habits{
+  position: absolute;
+  width: 500px;
+  padding: 20px;
+  top: 20px;
+  right: 700px;
+}
+
+.start-building-habits h2 {
+  color: #fce138;
+  font-style: italic;
+  text-align: right;
+  font-size: 50px; 
+}
+
+.start-building-habits p {
+  color: white;
+  text-align: right;
 }
 
 /* creating a new div class here for everything contained inside the "hero-form" */
@@ -123,15 +125,15 @@ section {
   /* any additional padding relating to the bounds of the parent tag */ 
   bottom: 120px;
   right: 140px;
-  
-  
 }
+  
+  
 
 .hero-form h3 {
   font-size: 24px;
   margin:0;
 }
- /* styling the p nested inside the class hero-form */
+/* styling the p nested inside the class hero-form */
 .hero-form p{
   margin: 5px 0 15px 0;
 }
@@ -215,7 +217,7 @@ combined declarations with .section-title .primary-border and .secondary-border
 /* end what we do styling */
 
 /**************************/
-  
+
 /* begin what you do steps class section */
 /* section-title declared above already! :) */
 
@@ -256,7 +258,7 @@ combined declarations with .section-title .primary-border and .secondary-border
 }
 
 .steps span{ /* inline element meant for highlighting sections of larger text blocks
-                MUST define things otherwise it will keep the styling of its parent tag! */
+  MUST define things otherwise it will keep the styling of its parent tag! */
   font-size: 38px;
 }
 
@@ -317,8 +319,6 @@ combined declarations with .section-title .primary-border and .secondary-border
   text-align: right;
 }
 
-
-
 /* end your trainers section */
 
 /*******************************/
@@ -369,15 +369,29 @@ combined declarations with .section-title .primary-border and .secondary-border
 
 /*******************************/
 
+/*styling to footer*/
+footer {
+  background: #fce138;
+  width: 100%;
+  padding: 40px 35px;
+}
 
-  /* extra padding for the entire page
-  when I was looking at examples I thought the white space was supposed to be there so I added it with this styling
-  in retrospect I think it was an illusion given by the picture examples
-  
-  html {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-  }
-*/
+footer h2 {
+  display: inline;
+  color: #024e76;
+  font-size: 30px;
+  margin: 0;
+}
+
+footer div {
+  float: right;
+  line-height: 1.5;
+  text-align: right;
+}
+
+footer a {
+  color: #024e76
+}
+/* footer style end */
+
+
