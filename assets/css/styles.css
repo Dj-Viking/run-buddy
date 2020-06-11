@@ -1,4 +1,10 @@
 /*Sets browser default margin and padding to 0*/
+:root{
+  --primary-color: #fce138;
+  --secondary-color: #024e76;
+  --tertiary-color: #39a6b2;
+}
+
 * {
   margin: 0;
   padding-top: 0;
@@ -8,7 +14,7 @@
 /* apply styles to body */
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #39a6b2
+  color: var(--tertiary-color);
   
 }
 
@@ -16,13 +22,14 @@ body {
 /* added flex property */
 header {
   padding: 20px 35px;
-  background-color: #39a6b2;
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9999;
   background-image: url('../images/flipped-hero-image.jpg'); 
   background-size: cover; 
   background-position: 80%;
@@ -34,7 +41,7 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: #fce138;
+  color: var(--primary-color);
   /* shadow values- horizontal offset | vertical offset | radius */
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
@@ -42,14 +49,14 @@ header h1 {
 /*removes underline and color of link*/
 header a{
   text-decoration: none;
-  color: #fce138;
+  color: var(--primary-color);
 }
 
 /*applying <header> <h1> <a>*/
 header h1 a{
   font-weight: bold;
   font-size: 36px;
-  color: #fce138;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -78,8 +85,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover{
-  background: #fce138;
-  color: #024e76;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
 }
@@ -121,7 +128,7 @@ section {
 }
   
 .start-building-habits h2 {
-  color: #fce138;
+  color: var(--primary-color);
   font-style: italic;
   font-size: 55px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
@@ -132,11 +139,11 @@ section {
 .hero-form {
   background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
-  color: #024e76;
+  color: var(--secondary-color);
   border-style: solid;
   border-width: 3px;
-  border-color: #024e76;
-  border: solid 3px #024e76;
+  border-color: var(--secondary-color);
+  border: solid 3px var(--secondary-color);
   width: 40%;
   margin: 3.5%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -160,11 +167,11 @@ section {
 
 /* creating a new class for the inputs in the form */
 .form-input{
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--secondary-color);
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
@@ -184,8 +191,8 @@ section {
 }
 
 .hero-form button {
-  color: #fce138;
-  background-color: #024e76;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -193,10 +200,66 @@ section {
 }
 
 .hero-form button:hover{
-  background-color: #39a6b2;
+  background-color: var(--tertiary-color);
 }
 
+.checkbox-wrapper input, .radio-wrapper input {
+  opacity: 0;
+}
 
+.checkbox-wrapper label, .radio-wrapper label{
+  position: relative;
+  left: 10px;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+.checkbox-wrapper label::before, .radio-wrapper label::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgba(255, 255, 255, .75);
+  border: 1px solid var(--secondary-color);
+  position: absolute;
+  top: -4px;
+  left: -30px;
+}
+
+.radio-wrapper label::before{
+  border-radius: 50%;
+}
+
+.radio-wrapper label::after{
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--secondary-color);
+  position: absolute;
+  left: -29px;
+  top: -3px;
+  background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
+}
+
+.checkbox-wrapper label::after {
+  content: "";
+  height: 6px;
+  width: 14px;
+  border-left: 2px solid var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  position: absolute;
+  left: -26px;
+  top: 1px;
+  transform: rotate(-58deg);
+}
+
+.checkbox-wrapper input + label::after, .radio-wrapper input + label::after{
+  content: none;
+}
+
+.checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after{
+  content: "";
+}
 /* hero style end */
 
 /********************/
@@ -216,7 +279,7 @@ section {
 /* this is also representing what you do and Reach Out sections */
 .section-title{ 
   font-size: 48px;
-  color: #024e76;
+  color: var(--secondary-color);
   border-bottom: 3px solid;
   padding-bottom: 20px;
   text-align: center;
@@ -231,7 +294,7 @@ section {
 }
 
 .primary-border{
-  border-color: #fce138;
+  border-color: var(--primary-color);
 }
 
 /* end what we do styling */
@@ -241,14 +304,14 @@ section {
 /* begin what you do steps class section */
 /* section-title declared above already! :) */
 .steps{
-  background: #fce138;
+  background: var(--primary-color);
 }
 
 .step{
   margin: 50px auto;
   padding-bottom: 50px;
   width: 80%;
-  border-bottom: 1px solid #39a6b2;
+  border-bottom: 1px solid var(--tertiary-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -260,12 +323,12 @@ section {
 }
 
 .secondary-border{
-  border-color: #39a6b2;
+  border-color: var(--tertiary-color);
 }
 
 
 .step h3 {
-  color: #024e76;
+  color: var(--secondary-color);
   font-size: 46px;
   flex: 1 30%;
   
@@ -294,11 +357,11 @@ section {
 .step-text h4{
   font-size: 26px;
   line-height: 1.5;
-  color: #024e76;
+  color: var(--secondary-color);
 }
 
 .step-text p{
-  color: #39a6b2;
+  color: var(--tertiary-color);
   font-size: 18px;
 }
 
@@ -317,8 +380,8 @@ section {
 .trainer {
   flex: 1;
   margin: 20px;
-  background: #024e76;
-  color: #fce138;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .trainer img {
@@ -352,7 +415,7 @@ section {
 /* begin class services section */
 
 .services {
-  background: #fce138;
+  background: var(--primary-color);
 }
 
 .service-grid-wrapper{
@@ -368,8 +431,8 @@ section {
   background-color: lightyellow;
   width: 80%;
   display: grid;
-  border: 2px solid #024e76;
-  color: #024e76;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
   font-size: 1.2rem
 }
 
@@ -395,7 +458,7 @@ section {
 
 .service-grid-item {
   padding: 15px 0;
-  border: 2px solid #024e76;
+  border: 2px solid var(--secondary-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -410,12 +473,12 @@ section {
 
 .contact {
   
-  background: #024e76;
-  color: #fce138;
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .contact h2{
-  color: #fce138;
+  color: var(--primary-color);
 }
 
 /* adding this element structure > * to give all direct children elements
@@ -443,7 +506,7 @@ the properties that exist inside this parent declaration */
 
 .contact-info h3 {
   
-  color: #fce138;
+  color: var(--primary-color);
   font-size: 32px;
 }
 
@@ -456,16 +519,16 @@ the properties that exist inside this parent declaration */
 }
 
 .contact-info a {
-  color: #fce138;
+  color: var(--primary-color);
   
 }
 
 .contact-form input, .contact-form textarea{
-  border: 1px solid #024e76;
+  border: 1px solid var(--secondary-color);
   display: block;
   padding: 7px 15px;
   font-size: 16px;
-  color: #024e76;
+  color: var(--secondary-color);
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
@@ -486,8 +549,8 @@ the properties that exist inside this parent declaration */
 .contact-form button{
   width: 100%;
   border: none;
-  background: #fce138;
-  color: #024e76;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
@@ -495,8 +558,8 @@ the properties that exist inside this parent declaration */
 }
 
 .contact-form button:hover{
-  color: #fce138;
-  background: #39a6b2;
+  color: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 /* end reach out section */
@@ -505,7 +568,7 @@ the properties that exist inside this parent declaration */
 
 /*styling to footer*/
 footer {
-  background: #fce138;
+  background: var(--primary-color);
   width: 100%;
   padding: 40px 35px;
   display: flex;
@@ -515,7 +578,7 @@ footer {
 
 footer h2 {
   
-  color: #024e76;
+  color: var(--secondary-color);
   font-size: 30px;
   margin: 0;
 }
@@ -527,7 +590,7 @@ footer div {
 }
 
 footer a {
-  color: #024e76
+  color: var(--secondary-color);
 }
 /* footer style end */
 
