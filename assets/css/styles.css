@@ -18,6 +18,10 @@ body {
   
 }
 
+.target-padding{
+  padding: 30px 0 30px 0;
+}
+
 /* apply styles to <header> */
 /* added flex property */
 header {
