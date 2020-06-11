@@ -1,7 +1,7 @@
 /*Sets browser default margin and padding to 0*/
 * {
   margin: 0;
-  padding: 0;
+  padding-top: 0;
   box-sizing: border-box;
 }
 
@@ -9,6 +9,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #39a6b2
+  
 }
 
 /* apply styles to <header> */
@@ -19,6 +20,13 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url('../images/flipped-hero-image.jpg'); 
+  background-size: cover; 
+  background-position: 80%;
+  background-attachment: fixed;
 }
 
 /*applying inline elements to h1 header*/
@@ -27,6 +35,8 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: #fce138;
+  /* shadow values- horizontal offset | vertical offset | radius */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /*removes underline and color of link*/
@@ -59,12 +69,21 @@ header nav ul {
 }
 
 
-/*Gives properties to a elements*/
+/*Gives properties to nested <a> elements*/
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+header nav ul li a:hover{
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 
 
 /***********************/
@@ -84,7 +103,8 @@ section {
   padding: 60px;
   background-image: url('../images/flipped-hero-image.jpg'); 
   background-size: cover; 
-  background-position: center;
+  background-position: 80%;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -103,13 +123,14 @@ section {
 .start-building-habits h2 {
   color: #fce138;
   font-style: italic;
-  font-size: 55px; 
+  font-size: 55px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
   
 /* creating a new div class here for everything contained inside the "hero-form" */
 
 .hero-form {
-  background-color: #fce138;
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: #024e76;
   border-style: solid;
@@ -118,6 +139,8 @@ section {
   border: solid 3px #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
   /* position this class element form within the bounds of its parent tag */
   
   /* any additional padding relating to the bounds of the parent tag */ 
@@ -144,7 +167,16 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .75);
 }
+
+.form-input:focus{
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+
 
 /* creating a new class for the labels in the form */
 .form-label{
@@ -157,6 +189,11 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.hero-form button:hover{
+  background-color: #39a6b2;
 }
 
 
@@ -216,6 +253,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:last-child{
+  border-bottom: none;
 }
 
 .secondary-border{
@@ -428,7 +469,18 @@ the properties that exist inside this parent declaration */
   width: 100%;
   margin-bottom: 15px;
   margin-top: 5px;
-  
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.contact-form textarea:focus{
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.contact-form input:focus{
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .contact-form button{
@@ -439,7 +491,14 @@ the properties that exist inside this parent declaration */
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
 }
+
+.contact-form button:hover{
+  color: #fce138;
+  background: #39a6b2;
+}
+
 /* end reach out section */
 
 /*******************************/
@@ -480,6 +539,7 @@ footer a {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
