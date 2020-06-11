@@ -18,9 +18,8 @@ body {
   
 }
 
-.target-padding{
-  padding: 30px 0 30px 0;
-}
+
+
 
 /* apply styles to <header> */
 /* added flex property */
@@ -264,6 +263,24 @@ section {
 .checkbox-wrapper input:checked + label::after, .radio-wrapper input:checked + label::after{
   content: "";
 }
+
+/*
+.navtarget-whatwedo{
+  padding: 30px 0 30px 0;
+  position: absolute;
+  bottom: -378px; 
+}
+  /* 400 pixels is a good estimate */
+
+
+
+
+  /*this is just to show where the target sits on the page */
+  /*
+  border-style: solid;
+  border-width: 3px;
+  border-color: var(--secondary-color);
+  */
 /* hero style end */
 
 /********************/
