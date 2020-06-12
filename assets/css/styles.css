@@ -271,10 +271,6 @@ section {
   bottom: -378px; 
 }
   /* 400 pixels is a good estimate */
-
-
-
-
   /*this is just to show where the target sits on the page */
   /*
   border-style: solid;
@@ -405,9 +401,41 @@ section {
   color: var(--primary-color);
 }
 
-.trainer img {
+.trainer-1{
+  background-image: url("../images/trainer-1.jpg");
+  background-size: cover; 
+}
+
+.trainer-2{
+  background-image: url("../images/trainer-2.jpg");
+  background-size: cover;
+}
+
+.trainer-3{
+  background-image: url("../images/trainer-3.jpg");
+  background-size: cover;
+}
+
+.trainer-img {
   width: 100%;
+  min-height: 300px;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+}
+
+.trainer-img::after{
+  content: "";
+  opacity: .3;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(252, 225, 56, 0.3), #024E76);
+  /*background: linear-gradient(0deg, var(--secondary-color), rgba(252, 225, 56, .3)100%);*/
   
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .trainer-bio {
@@ -415,17 +443,37 @@ section {
   line-height: 1.3;
 }
 
-.trainer-bio h3 {
-  font-size: 28px;
+.trainer-img div{
+  overflow: hidden;
 }
 
-.trainer-bio h4 {
+.trainer-img h3 {
+  font-size: 28px;
+  position: relative;
+  top: 200px;
+  z-index: 9998;
+}
+
+.trainer-img h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
+  position: relative;
+  top: 200px;
+  z-index: 9998;
 }
 
-.trainer-bio p {
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4{ 
+  top: 0px;
+  overflow: visible;
+  transition: 0.5s;
+  
+}
+
+
+
+
+.trainer-img p {
   font-size: 17px;
 }
 
@@ -716,7 +764,7 @@ footer a {
   }
 }
 
-/* MEDIA QUERY FOIR MOBILE PHONES AND SMALLER */
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   .hero-form button {
     width: 100%;
