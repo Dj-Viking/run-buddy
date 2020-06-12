@@ -17,10 +17,6 @@ body {
   color: var(--tertiary-color);
   
 }
-
-
-
-
 /* apply styles to <header> */
 /* added flex property */
 header {
@@ -105,10 +101,6 @@ section {
   align-items: flex-start;
 }
 
-
-
-
-
 .hero {
   padding: 60px;
   background-image: url('../images/flipped-hero-image.jpg'); 
@@ -156,8 +148,6 @@ section {
   /* any additional padding relating to the bounds of the parent tag */ 
   
 }
-  
-  
 
 .hero-form h3 {
   font-size: 24px;
@@ -185,8 +175,6 @@ section {
   background-color: rgba(255, 255, 255, 1);
   outline: none;
 }
-
-
 
 /* creating a new class for the labels in the form */
 .form-label{
@@ -264,19 +252,27 @@ section {
   content: "";
 }
 
-/*
-.navtarget-whatwedo{
-  padding: 30px 0 30px 0;
-  position: absolute;
-  bottom: -378px; 
+/* creating new declarations for the nav bar to not cover the section */
+.intro, .steps, .services, .contact{
+  position: relative;
 }
-  /* 400 pixels is a good estimate */
-  /*this is just to show where the target sits on the page */
-  /*
-  border-style: solid;
-  border-width: 3px;
-  border-color: var(--secondary-color);
-  */
+
+.trainers-nav-relative-container{/* have to make this to make up for my big oops not making the section class="trainers"...if i move that, my page breaks..*/
+  position: relative
+}
+
+#what-we-do, #what-you-do, #service-plans, #reach-out{
+  content: "";
+  top: -50px;
+  position: absolute;
+}
+
+#your-trainers{
+  content: "";
+  top: -50px;
+  position: absolute;
+}
+
 /* hero style end */
 
 /********************/

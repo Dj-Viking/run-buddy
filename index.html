@@ -31,10 +31,10 @@
                         <a href="#your-trainers">Your Trainers</a>
                     </li>
                     <li>
-                        <a href="#reach-out">Reach Out</a>
+                        <a href="#service-plans">Service Plans</a>
                     </li>
                     <li>
-                        <a href="#service-plans">Service Plans</a>
+                        <a href="#reach-out">Reach Out</a>
                     </li>
                 </ul>
             </nav>
@@ -95,17 +95,14 @@
                     </button>
                 </form>
             </div>
-            <!-- the position on the page where the nav link will go for the following section -->
-            <!--
-                <div class="navtarget-whatwedo" id="what-we-do"></div> 
-            -->
         </section>
         <!-- End of Hero/Jumbotron Section -->
         
         
         <!-- "what we do" section start -->
         
-        <section class="intro" id="what-we-do">
+        <section class="intro">
+            <div id="what-we-do"><!-- nav bar will target this part of the page to prevent the covering bug --></div>
             <!-- can place several classes for a section in a row with a space separating each one -->
             <div class="flex-row">
                 <h2 class="section-title primary-border">
@@ -121,7 +118,8 @@
         <!-- what we do section end -->
         <!-- "what you do" section start -->
 
-        <section id="what-you-do" class="steps">
+        <section class="steps">
+            <div id="what-you-do"></div>
             <!-- Wrap every h2 with a class of "section-title" in this div! -->
             <div class="flex-row">
             <!-- placing several classes here separated by space -->
@@ -224,10 +222,11 @@
         <!-- What You Do section end --> 
         
         <!-- "your trainers" section start -->
-        
-        <section id="your-trainers">
+        <!-- declared as class trainers below oops instead of the section class here-->
+        <section class="trainers-nav-relative-container">
+            <div id="your-trainers"></div>
             <div class="flex-row">
-                <h2 class="section-title primary border">
+                <h2 class="section-title primary-border">
                     Meet the Trainers 
                 </h2>
             </div>
@@ -306,7 +305,8 @@
         </section>
         <!-- your trainers section end -->
         <!-- service plans section start -->
-        <section id="service-plans" class="services">
+        <section class="services">
+            <div id="service-plans"><!-- nav will target this div--></div>
             <h2 class="section-title secondary-border">
                 Our Service Plans
             </h2>
@@ -359,7 +359,8 @@
         </section>
         <!-- Service Plans section end -->
         <!-- "reach out" section start -->
-        <section id="reach-out" class="contact">
+        <section class="contact">
+            <div id="reach-out"><!-- nav will target this div--></div>
             <div class="flex-row">
                 <h2 class="section-title secondary-border">
                     Reach Out 

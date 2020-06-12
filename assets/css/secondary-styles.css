@@ -1,3 +1,4 @@
+
 /* privacy policy page hero-main */
 
 .hero {
@@ -16,54 +17,76 @@
     color: red;
   }
 
-  .page-title {
-      color: #fce138;
-      display: inline-block;
-      border-bottom: 4px solid;
-      border-color: #fce138;
-      padding: 0 80px 15px 80px;
-      font-weight: normal;
-      font-size: 42px;
-      font-style: italic;
-  }
-  
-  .terms-of-use{
+.page-title {
+    color: #fce138;
+    display: inline-block;
+    border-bottom: 4px solid;
+    border-color: #fce138;
+    padding: 0 80px 15px 80px;
+    font-weight: normal;
+    font-size: 42px;
+    font-style: italic;
+}
+
+.terms-of-use{
+text-align: center;
+color: #024e76;
+font-size: 30px;
+margin: 20px;
+}
+
+.policy-text{
+    color: #024e76;
+    width: 80%;
+    margin: auto;
+
+}
+
+.policy-text h3 {  
     text-align: center;
     color: #024e76;
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
-  }
+}
 
-  .policy-text{
-      color: #024e76;
-      width: 80%;
-      margin: auto;
-    
-  }
+.policy-text p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
 
-  .policy-text h3 {  
-      text-align: center;
-      color: #024e76;
-      font-size: 25px;
-      margin: 20px;
-  }
+.privacy-contact{
+    text-align: center;
+}
 
-  .policy-text p{
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 20px;
-  }
+ul {
+    /* margin order top right bottom left CLOCKWISE */
+    margin: 0;
+}
 
-  .privacy-contact{
-      text-align: center;
-  }
+li {
+    color: #39a6b2;
+    margin: 10px 0 10px 0;
+}
 
-  ul {
-      /* margin order top right bottom left CLOCKWISE */
-      margin: 0;
-  }
 
-  li {
-      color: #39a6b2;
-      margin: 10px 0 10px 0;
+  /* creating new declarations for the nav bar to not cover the section */
+.intro, .steps, .services, .contact{
+    position: relative;
   }
+  
+.trainers-nav-relative-container{/* have to make this to make up for my big oops not making the section class="trainers"...if i move that, my page breaks..*/
+position: relative
+}
+
+#what-we-do, #what-you-do, #service-plans, #reach-out{
+content: "";
+top: -50px;
+position: absolute;
+}
+
+#your-trainers{
+content: "";
+top: -309000px;
+position: absolute;
+}
