@@ -447,6 +447,7 @@ section {
   position: relative;
   top: 200px;
   z-index: 9998;
+  transition: 0.5s;
 }
 
 .trainer-img h4 {
@@ -456,6 +457,7 @@ section {
   position: relative;
   top: 200px;
   z-index: 9998;
+  transition: 0.5s;
 }
 
 
@@ -475,6 +477,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
+  transition: 0.5s;
 }
 
 .trainer-img:hover::after{
