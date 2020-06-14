@@ -428,21 +428,25 @@ section {
   line-height: 1.3;
 }
 
-.trainer-bio h3{
+.trainer-bio .mobile-h3{
   font-size: 28px;
+  display: none;
+  opacity: 0;
 }
 
-.trainer-bio h4 {
+.trainer-bio .mobile-h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
+  display: none;
+  opacity: 0;
 }
 
 .trainer-img div{
   overflow: hidden;
 }
 
-.trainer-img h3 {
+.trainer-img .trainer-bio h3 {
   font-size: 28px;
   position: relative;
   top: 200px;
@@ -450,7 +454,7 @@ section {
   transition: 0.5s;
 }
 
-.trainer-img h4 {
+.trainer-img .trainer-bio h4 {
   font-weight: lighter;
   font-size: 22px;
   margin-bottom: 15px;
@@ -689,6 +693,19 @@ footer a {
     position: relative;
   }
   
+  .trainer-bio .mobile-h3{
+    font-size: 28px;
+    display: block;
+    opacity: 1;
+  }
+  
+  .trainer-bio .mobile-h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+    opacity: 1;
+    display:block;
+  }
 
   header h1 {
     width: 100%;
